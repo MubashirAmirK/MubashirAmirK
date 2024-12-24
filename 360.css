@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .box:hover {
+    transform: rotate(360deg);
+  }
+  
