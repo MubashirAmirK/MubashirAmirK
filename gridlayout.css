@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Shared Grid Layout Styles */
+  .grid-layout {
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .grid-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0 auto;
+  }
+  
+  /* Grid Items */
+  .grid-item {
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Yellow Layout */
+  .yellow-layout {
+    background-color: #fdd835;
+  }
+  
+  .yellow-layout .grid-container .grid-item {
+    background-color: #fbc02d;
+    border: 2px solid #f9a825;
+  }
+  
+  /* Green Layout */
+  .green-layout {
+    background-color: #388e3c;
+  }
+  
+  .green-layout .grid-container .grid-item {
+    background-color: #2e7d32;
+    border: 2px solid #1b5e20;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
