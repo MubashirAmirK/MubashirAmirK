@@ -1,0 +1,56 @@
+/* Phase 1: Structure and Layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f9fafc;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+/* Phase 2: Colors, Font, and Spacing */
+.card {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  padding: 0 10px;
+}
+/* Phase 3: Hover Effects and Interactivity */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+  color: #3498db;
+}
